@@ -6,21 +6,25 @@
 
 | Tier | 主題 | 排程原則 |
 | --- | --- | --- |
-| S | Data Structures & Algorithms、Math for ML、Machine Learning、Deep Learning、Transformer / LLM、Research / Project Defense | 每週持續接觸；先測再補，不因專案經驗而跳過基礎 |
-| A | Operating Systems、Computer Networks、Databases、C/C++ | 先建立口試基本覆蓋，再依弱點或目標實驗室調高優先級 |
+| S | Data Structures & Algorithms、Math for ML、Machine Learning、Deep Learning、Transformer / LLM、Statistics / Experimental Design、Research / Project Defense | 每週持續接觸；先測再補，不因專案經驗而跳過基礎 |
+| A | Operating Systems、Computer Networks、Databases、C/C++、Computer Architecture、Software Engineering | 先建立口試基本覆蓋，再依弱點或目標實驗室調高優先級 |
 
 同 Tier 的初始順序是 DSA → Math → ML → DL → Transformer / LLM；研究答辯穿插進行。依實測可調整，學校 / 實驗室偏好只有取得資訊後才納入。
+
+Statistics / Experimental Design 隨研究主張一起練。Software Engineering 因本人 QA / SE 背景，在 defense / mock 中視同 Tier S；CPU/GPU / memory hierarchy 隨 deployment 答辯提高優先級。先備核心修補優先於進階延伸。
 
 ## 四週階段
 
 | 階段 | 核心目標 | 訓練方式 | 具體產出 | 檢查點 |
 | --- | --- | --- | --- | --- |
-| 第 1 週：診斷與基礎定位 | 完成 30 題 adaptive diagnostic，確認所有領域的基本覆蓋 | 一次一題、先答後教、逐層追問；必要時即時補基礎 | 真實 session records；第 10 / 20 / 30 題 weakness snapshots；研究 / 專案清單 | 完成不代表通過；所有評級能追溯到回答 |
+| 第 1 週：診斷與基礎定位 | 完成 30 題 adaptive diagnostic，13 個領域均有真實實測 evidence | 一次一題、先答後教、逐層追問；必要時即時補基礎 | 真實 session records；第 10 / 20 / 30 題 weakness snapshots；初步 portfolio evidence | 完成不代表通過；未測子題維持 Untested |
 | 第 2 週：集中補洞 | 優先修復已測出的 Tier S Critical / Weak 與前置知識 | 每次選 1–2 個子題，閉卷作答、短教學、白板 / coding、變形重測 | mistake log、review queue、至少一份真實 defense draft | 關鍵子題能獨立重答，且沒有新的根本錯誤 |
-| 第 3 週：跨題整合 | 串接數學、ML、DL、LLM 與實際研究；補 Tier A | 混合 fundamentals、專案設計與反例；安排 mock | mock records；附實測證據的更新 map；有來源的評估表 | 能處理 1–3 層追問，並解釋 trade-off 與 failure case |
-| 第 4 週：面試收斂 | 穩定回答、縮短表達、驗證研究主張 | 隨機抽問、限時白板、30 秒 / 2 分鐘 / 5 分鐘 defense、間隔重測 | 最新 priorities、精簡 defense、未解問題清單 | 高優先級已測子題沒有尚未處理的根本錯誤；保留所有未知 |
+| 第 3 週：跨題整合 | Fundamentals + Research / Project Defense + Statistics / Experimental Design + Software Engineering | 比較、ablation / uncertainty、QA / SE 證據與系統取捨；安排 mock | mock records；更新 map；有來源的 claim / evaluation 表 | 能處理追問，區分統計 / 因果 / 實務主張與工程品質維度 |
+| 第 4 週：面試收斂 | Full mock、defense、spaced repetition；符合觸發條件才提高 school-specific 投入 | 隨機抽問、限時白板、三種 defense 時間版本；已知目標的 fit / risk questions | 最新 priorities、精簡 defense、真實 school information 或 UNKNOWN、未解問題清單 | 高優先級已測子題沒有未處理的根本錯誤；保留所有未知 |
 
 Mock 建議先做 20–30 分鐘，再按目標面試形式調整。Mock 次數與題數依實際時間決定，不預填完成紀錄。
+
+[School-specific](school-specific/README.md) 只在一階通過 / 確定口試後高強度使用，不搶走前期 fundamentals 時間；尚無目標時第 4 週仍做 full mock / defense / review。[Portfolio inventory](research-defense/portfolio-index.md) 的待補項目是證據缺口，不能當成已完成訓練。
 
 ## 每次訓練循環
 
@@ -45,7 +49,7 @@ Mock 建議先做 20–30 分鐘，再按目標面試形式調整。Mock 次數�
 
 ## 完成標準
 
-- [ ] 30 題診斷完成，10 個領域皆有實測證據。
+- [ ] 30 題診斷完成，13 個領域皆有實測證據。
 - [ ] 高優先級子題有定義、理由、推導 / 成本分析及變形題證據。
 - [ ] 研究與專案能清楚交代個人貢獻、比較、結果來源及限制。
 - [ ] 已進行模擬口試，改善事項有後續驗證。

@@ -1,6 +1,6 @@
 # Training Progress
 
-最後更新：2026-10-06（Asia/Taipei）。此日期是系統初始化日期，不是測驗日期。
+最後更新：2026-10-06（Asia/Taipei）。此日期是 repository expansion 日期，不是測驗日期。
 
 ## Diagnostic progress
 
@@ -8,7 +8,7 @@
 | --- | --- |
 | Completed main questions | 0 / 30 |
 | Current question | 第 1 題已提出，未作答；不計入完成數 |
-| Training state | Paused，等待使用者確認 repository |
+| Training state | Paused，等待使用者確認本次 repository expansion |
 | Latest scored session | 無 |
 | 10-question checkpoint | 尚未到達 |
 | 20-question checkpoint | 尚未到達 |
@@ -41,9 +41,12 @@
 | Computer Networks | Untested | 尚無作答 |
 | Databases | Untested | 尚無作答 |
 | C/C++ | Untested | 尚無作答 |
+| Computer Architecture | Untested | 尚無作答 |
+| Statistics / Experimental Design | Untested | 尚無作答 |
+| Software Engineering | Untested | 尚無作答 |
 | Research / Project Defense | Untested | 尚無答辯 |
 
-初始 coverage 僅表示未測；後續若同主題有不同子題等級，以 Mixed 加上摘要呈現，不把未測部分平均成分數。
+初始 coverage 僅表示未測：12 個 technical topics + Research / Project Defense = 13 domains，目前有真正實測 evidence 的 domain 為 0 / 13。後續若同主題有不同子題等級，以 Mixed 加上摘要呈現，不把未測部分平均成分數。
 
 ## Mock interview history
 
@@ -61,8 +64,10 @@
 
 ## Next priorities
 
-1. 使用者檢視並確認 repository。
-2. 確認後恢復第 1 題，先口述思路與複雜度，再進入 code 及逐層追問。
-3. 依真實回答調整後續題目；第 10 題完成後建立第一份 weakness snapshot。
+1. 本次 expansion 確認後 Resume Diagnostic Question 1；先口述、分析，再進入 code / 追問。
+2. Build real weakness evidence：依原始回答與追問更新已測子題。
+3. Build research/project portfolio evidence：補 [inventory](research-defense/portfolio-index.md) 的個人角色與 claim / evidence。
+4. 完成 10-question checkpoint，建立第一份實測 snapshot，再同步主表。
+5. School-specific preparation only after actual interview targets become known；一階通過 / 確定口試後才高強度使用 [school-specific](school-specific/README.md)。
 
 這是訓練操作順序，不是預判能力弱點。後續 priorities 應列出子題、證據連結、預期改善與下次驗證方式。

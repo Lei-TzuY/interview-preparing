@@ -32,6 +32,10 @@
 
 以 [defense framework](research-defense/README.md) 組織回答。第一人稱的貢獻必須清楚界定，引用數字時能指出實驗紀錄、commit 或論文版本。
 
+研究型回答要分清 observation（實際看到的結果）、hypothesis（待檢驗解釋）、causal claim（需識別條件支持的因果）、statistical evidence（模型假設與不確定性）及 practical significance（效果是否值得成本）。用 [Experimental Design](topics/11-statistics-experimental-design.md) 檢查推論，不以單一顯著性門檻代替結論。
+
+系統 / SE 回答要分清 correctness（符合規格）、reliability（指定情境下持續運作）、performance（指定 workload 的成本）、scalability（規模增加時的變化）、maintainability（變更與理解成本）、reproducibility（能重現過程 / 結果）。每個維度要對應自己的證據；見 [Software Engineering](topics/12-software-engineering.md) 與 [portfolio inventory](research-defense/portfolio-index.md)。
+
 | 教授追問方向 | 應展示的能力 |
 | --- | --- |
 | 為什麼值得做？ | 具體問題、使用情境、研究缺口與可驗證目標 |

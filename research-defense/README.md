@@ -24,7 +24,7 @@ Tier S。以真實專案、研究助理工作或投稿內容訓練，重點是�
 
 ## 使用流程
 
-1. 選一個自己能負責解釋且有真實資料的 project / research，不以未做的成果代替。
+1. 先檢視 [真實 portfolio inventory](portfolio-index.md)，補證據與個人分工，再選一個能負責解釋的 project / research，不以未做的成果代替。
 2. 專案用 [project-defense-template](project-defense-template.md)，研究 / 投稿用 [research-defense-template](research-defense-template.md)。
 3. 每項主張先找 source：commit、實驗 log、figure、table、資料版本或論文版本。未知項目明確寫未驗證。
 4. 先練 2-minute version，再壓成 30-second version，最後展開 5-minute version。
@@ -37,6 +37,8 @@ Tier S。以真實專案、研究助理工作或投稿內容訓練，重點是�
 - 個人、團隊、開源套件與 AI 工具協助的工作範圍如實界定；仍須能解釋自己負責的技術。
 - 投稿、審查中、接受與發表是不同狀態，只依真實紀錄描述。
 - 無法補 baseline / ablation 時說明缺口，縮小主張；不捏造比較數字。
+
+評估與不確定性連到 [Statistics / Experimental Design](../topics/11-statistics-experimental-design.md)；QA / SE 主張連到 [Software Engineering](../topics/12-software-engineering.md)，此主題在 defense / mock 視同 Tier S。GPU / deployment 取捨連到 [Computer Architecture](../topics/10-computer-architecture.md)。
 
 ## Professor attack directions
 

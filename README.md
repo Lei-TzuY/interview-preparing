@@ -6,8 +6,8 @@
 
 ## 目前狀態
 
-- 訓練系統已初始化；Diagnostic 已完成 **0 / 30** 題。
-- 第 1 題曾在對話提出，尚未作答；診斷依使用者要求暫停，確認 repository 後才恢復。
+- 訓練系統已完成第二階段 coverage expansion；Diagnostic 已完成 **0 / 30** 題。
+- 第 1 題曾在對話提出，尚未作答；診斷暫停，確認本次 repository expansion 後才恢復。
 - 所有子題初始狀態均為 **Untested**，沒有預先判定的強弱項。
 - 這裡是訓練入口，不收錄完整 Diagnostic 題庫或答案。
 
@@ -27,10 +27,14 @@
 
 | Tier | 主題 |
 | --- | --- |
-| S | Data Structures & Algorithms、Math for ML、Machine Learning、Deep Learning、Transformer / LLM、Research / Project Defense |
-| A | Operating Systems、Computer Networks、Databases、C/C++ |
+| S | Data Structures & Algorithms、Math for ML、Machine Learning、Deep Learning、Transformer / LLM、Statistics / Experimental Design、Research / Project Defense |
+| A | Operating Systems、Computer Networks、Databases、C/C++、Computer Architecture、Software Engineering |
 
 Tier 表示準備優先級，不代表個人能力或任一學校固定的出題率。[四週 Roadmap](ROADMAP.md) 會隨實測結果調整，不綁定每日題數。
+
+Software Engineering 因本人 QA / SE 背景，在 defense / mock 中視同 Tier S；Computer Architecture 中的 CPU/GPU、memory hierarchy 因 inference / deployment 背景提高口試準備優先級。兩者都仍需實測，不預評能力。
+
+Technical coverage 現為 12 個 topics，加 Research / Project Defense 共 13 個診斷領域。Coverage 以範圍與真實證據追蹤，掌握程度仍待診斷確認。
 
 ## Repository architecture
 
@@ -41,13 +45,14 @@ Tier 表示準備優先級，不代表個人能力或任一學校固定的出題
 | [WEAKNESS_MAP.md](WEAKNESS_MAP.md) | 逐子題等級、證據、實測日期與下次複習 |
 | [INTERVIEW_STRATEGY.md](INTERVIEW_STRATEGY.md) | 口述、推導、coding、未知問題與教授追問策略 |
 | [diagnostic/](diagnostic/README.md) | 診斷流程、A–D 規準與 [session 紀錄](diagnostic/sessions/README.md) |
-| topics/ | 九大主題的口試範圍、回答要求、常見追問與 self-check |
-| [research-defense/](research-defense/README.md) | 專案 / 論文答辯與 30 秒、2 分鐘、5 分鐘版本 |
+| topics/ | 12 個 technical topics 的口試範圍、回答要求、常見追問與 self-check |
+| [research-defense/](research-defense/README.md) | [真實 portfolio inventory](research-defense/portfolio-index.md)、專案 / 論文答辯與三種時間版本 |
 | [mock-interviews/](mock-interviews/README.md) | 模擬口試流程及逐題紀錄模板 |
 | [mistakes/](mistakes/README.md) | 核心錯誤、正確 mental model 與重測紀錄 |
 | [review/](review/spaced-repetition.md) | 間隔複習規則與待複習 queue |
+| [school-specific/](school-specific/README.md) | 一階通過 / 確定口試後才高強度使用的 [school template](school-specific/school-template.md) |
 
-## Topic index
+## Technical topic index
 
 | 順序 | 文件 |
 | --- | --- |
@@ -60,6 +65,9 @@ Tier 表示準備優先級，不代表個人能力或任一學校固定的出題
 | 07 | [Computer Networks](topics/07-computer-networks.md) |
 | 08 | [Databases](topics/08-databases.md) |
 | 09 | [C/C++ Fundamentals](topics/09-cpp.md) |
+| 10 | [Computer Architecture](topics/10-computer-architecture.md) |
+| 11 | [Statistics / Experimental Design](topics/11-statistics-experimental-design.md) |
+| 12 | [Software Engineering](topics/12-software-engineering.md) |
 
 ## 如何紀錄進度
 
@@ -80,4 +88,4 @@ Session 是作答證據的原始來源，Weakness Map 是目前能力狀態的�
 - **研究答辯**：分清 Problem、My contribution、證據與 Limitations；成果數字必須有實際紀錄來源。
 - **追問**：能回答「為什麼、條件改變、成本與替代方案」。只背名稱、公式或模糊地差不多對，不能評 A。
 
-現在先檢視 repository。未取得恢復訓練的確認前，不開始 Diagnostic Question 1。
+現在先檢視本次 repository expansion。未取得恢復訓練的確認前，不開始 Diagnostic Question 1。

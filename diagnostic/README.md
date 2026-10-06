@@ -1,6 +1,6 @@
 # Adaptive Diagnostic Interview
 
-目標是透過 30 題主題題辨識口試基礎與追問韌性。目前完成 0 / 30；第 1 題已在對話提出但尚未作答，依使用者要求暫停，確認 repository 後才恢復。
+目標是透過 30 題主題題辨識口試基礎與追問韌性。目前完成 0 / 30；第 1 題已在對話提出但尚未作答，暫停至使用者確認本次 repository expansion 後才恢復。
 
 ## Session protocol
 
@@ -19,8 +19,30 @@
 - A：改問限制、反例與條件變化，或轉入相鄰主題檢查覆蓋。
 - B：追查推導、邊界、複雜度與被省略的假設。
 - C / D：定位缺少的前置知識，教學後安排未來獨立重測。
-- 30 題要涵蓋九個 topic 與 Research / Project Defense 共十個領域，每個領域至少一題；其餘題數依證據調整，Tier S 優先。
+- 30 題要涵蓋 12 個 technical topics + Research / Project Defense = **13 個領域**，每個領域至少有一筆真正實測 evidence；不要求平均配題，Tier S 與實際弱點可取得較多題數。
+- Coverage 依已回答、評定且有 session 紀錄的領域計算；只出題、讀文件或追問提及名詞不算實測。跨題可覆蓋多領域，但每個領域都要有足夠作答與評分證據。
+- 不為 coverage 硬塞低價值問題；用基本但有鑑別度、與準備目標相關的題目。未測子題保持 Untested，追問不另計 main question。
 - 第 10 / 20 題檢查尚未覆蓋的領域，保留足夠題數完成覆蓋；不把某一題的結果外推到整個主題。
+
+## Coverage domains
+
+| Domain | Training scope | Initial evidence |
+| --- | --- | --- |
+| 01 Data Structures & Algorithms | [DSA](../topics/01-data-structures-algorithms.md) | Untested |
+| 02 Math for ML | [Math](../topics/02-math-for-ml.md) | Untested |
+| 03 Machine Learning | [ML](../topics/03-machine-learning.md) | Untested |
+| 04 Deep Learning | [DL](../topics/04-deep-learning.md) | Untested |
+| 05 Transformer / LLM | [Transformer / LLM](../topics/05-transformer-llm.md) | Untested |
+| 06 Operating Systems | [OS](../topics/06-operating-systems.md) | Untested |
+| 07 Computer Networks | [Networks](../topics/07-computer-networks.md) | Untested |
+| 08 Databases | [Databases](../topics/08-databases.md) | Untested |
+| 09 C/C++ | [C/C++](../topics/09-cpp.md) | Untested |
+| 10 Computer Architecture | [Architecture](../topics/10-computer-architecture.md) | Untested |
+| 11 Statistics / Experimental Design | [Statistics / Experimental Design](../topics/11-statistics-experimental-design.md) | Untested |
+| 12 Software Engineering | [SE](../topics/12-software-engineering.md) | Untested |
+| 13 Research / Project Defense | [Defense](../research-defense/README.md) / [Portfolio](../research-defense/portfolio-index.md) | Untested |
+
+這是領域索引，不公開完整 Diagnostic 題庫或答案。Software Engineering 在 defense / mock 中視同 Tier S，其他配題規則見 [Roadmap](../ROADMAP.md)。
 
 ## 每 10 題檢查點
 
