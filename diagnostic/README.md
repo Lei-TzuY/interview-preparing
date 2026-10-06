@@ -1,10 +1,12 @@
 # Adaptive Diagnostic Interview
 
-目標是透過 30 題主題題辨識口試基礎與追問韌性。目前完成 0 / 30；第 1 題已在對話提出但尚未作答，暫停至使用者確認本次 repository expansion 後才恢復。
+目標是透過 30 題主題題辨識口試基礎與追問韌性。Expansion 已確認，Diagnostic 恢復；目前完成 0 / 30，第 1 題等待閉卷首答，見 [目前 session](sessions/2026-10-06-session-01.md)。
+
+Syllabus 已 freeze；只有實測暴露目前 coverage 沒有涵蓋的重要基礎缺口，才依作答證據擴充。232 個 subtopics 是 knowledge / evidence index，不是必考題清單；一題可測多個子題，不追求全部標成 Tested。
 
 ## Session protocol
 
-1. 一次只提出一題，先讓準備者回答；不提供答案、提示解法或一次公開完整題庫。
+1. 一次只提出一題，先閉卷回答；首答不得查看教材、搜尋、詢問其他 AI 或使用解題提示。不提供答案、提示解法或一次公開完整題庫。
 2. 依 [scoring rubric](scoring-rubric.md) 初評 A / B / C / D，記錄原始答案與依據。
 3. 一次一個追問，依回答深入 1–3 層：理由、成本、trade-off、條件變化或反例。
 4. 答錯時先指出核心錯誤，再依直覺 → 正式定義 → 例子 → 必要數學補教。
@@ -52,7 +54,7 @@
 | 20 | 更新子題證據，檢查還未覆蓋的領域與早期錯誤 |
 | 30 | 完成診斷總結，產生 Targeted Study 優先清單及 mock 起點 |
 
-每個檢查點在實際 session 中保存 snapshot，再更新 [Weakness Map](../WEAKNESS_MAP.md)、[Progress](../PROGRESS.md) 與 topic Review Status。不要改寫歷史首答。
+每題依實測證據更新 [Weakness Map](../WEAKNESS_MAP.md) 的已測子題及 [Progress](../PROGRESS.md)；每個檢查點在實際 session 中保存 snapshot，並核對摘要與 topic Review Status。不要改寫歷史首答，assisted answer 另存。
 
 ## Records
 

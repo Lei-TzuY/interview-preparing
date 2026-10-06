@@ -1,20 +1,22 @@
 # Training Progress
 
-最後更新：2026-10-06（Asia/Taipei）。此日期是 repository expansion 日期，不是測驗日期。
+最後更新：2026-10-06（Asia/Taipei）。使用者已確認 expansion 並恢復 Diagnostic；目前尚無實測回答。
 
 ## Diagnostic progress
 
 | 項目 | 狀態 |
 | --- | --- |
 | Completed main questions | 0 / 30 |
-| Current question | 第 1 題已提出，未作答；不計入完成數 |
-| Training state | Paused，等待使用者確認本次 repository expansion |
+| Current question | 第 1 題重新提出，等待閉卷首答；不計入完成數 |
+| Training state | Active；Syllabus frozen |
 | Latest scored session | 無 |
 | 10-question checkpoint | 尚未到達 |
 | 20-question checkpoint | 尚未到達 |
 | 30-question checkpoint | 尚未到達 |
 
 追問、提示後重答及 review 重測不增加 30 題的完成數。
+
+目前 [session 01](diagnostic/sessions/2026-10-06-session-01.md) 只有題目與待作答狀態，沒有成績或已完成題目。
 
 ## Ability summary
 
@@ -64,7 +66,7 @@
 
 ## Next priorities
 
-1. 本次 expansion 確認後 Resume Diagnostic Question 1；先口述、分析，再進入 code / 追問。
+1. 回答 Diagnostic Question 1；先閉卷口述與分析，再進入逐層追問及 code，保留原始 baseline。
 2. Build real weakness evidence：依原始回答與追問更新已測子題。
 3. Build research/project portfolio evidence：補 [inventory](research-defense/portfolio-index.md) 的個人角色與 claim / evidence。
 4. 完成 10-question checkpoint，建立第一份實測 snapshot，再同步主表。

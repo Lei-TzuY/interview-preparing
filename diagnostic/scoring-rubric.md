@@ -44,4 +44,4 @@
 
 ## 狀態更新
 
-在第 10 / 20 / 30 題同步 [Weakness Map](../WEAKNESS_MAP.md)。記錄 Last Tested 的實測日期、Evidence 的 session 連結與 Next Review；提升後仍保留歷史證據。獨立延後重測也可更新主表，不增加 Diagnostic 題數。
+每題依實測證據更新 [Weakness Map](../WEAKNESS_MAP.md) 的已測子題，在第 10 / 20 / 30 題保存 checkpoint snapshot。記錄 Last Tested 的實測日期、Evidence 的 session 連結與 Next Review；提升後仍保留歷史證據。獨立延後重測也可更新主表，不增加 Diagnostic 題數。

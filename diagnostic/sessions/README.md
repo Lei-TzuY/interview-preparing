@@ -1,6 +1,6 @@
 # Diagnostic Sessions
 
-此資料夾保存真實口試作答證據。目前只有 [session template](session-template.md)，尚無已進行的 session。
+此資料夾保存真實口試作答證據。[Session 01](2026-10-06-session-01.md) 已建立第 1 題待作答紀錄，尚無回答或成績；新增 session 使用 [template](session-template.md)。
 
 ## 建立方式
 
@@ -13,5 +13,5 @@
 
 - Template 不是實際紀錄，空欄位不計進度、不納入評分。
 - 未測維度用 Untested，不適用用 N/A；沒有實際證據的數字不能填入。
-- Session 後更新 [Progress](../../PROGRESS.md)；檢查點更新 [Weakness Map](../../WEAKNESS_MAP.md)。
+- 每題依實測證據更新 [Progress](../../PROGRESS.md) 與 [Weakness Map](../../WEAKNESS_MAP.md) 的已測子題；每 10 題保存 checkpoint snapshot。
 - 錯誤連到 [mistake log](../../mistakes/mistake-log.md)，重測排入 [review queue](../../review/spaced-repetition.md)。

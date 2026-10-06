@@ -7,16 +7,20 @@
 ## 目前狀態
 
 - 訓練系統已完成第二階段 coverage expansion；Diagnostic 已完成 **0 / 30** 題。
-- 第 1 題曾在對話提出，尚未作答；診斷暫停，確認本次 repository expansion 後才恢復。
+- 本次 expansion 已確認，Diagnostic 已恢復；第 1 題等待閉卷首答，尚未評分。
 - 所有子題初始狀態均為 **Untested**，沒有預先判定的強弱項。
 - 這裡是訓練入口，不收錄完整 Diagnostic 題庫或答案。
+
+Syllabus 自 2026-10-06 起 freeze。只有 Diagnostic 實際暴露目前 coverage 未涵蓋的重要基礎缺口，才新增 technical topics 或擴充範圍；擴充須連到實際作答證據。
+
+232 個 subtopics 是 knowledge / evidence index，不是 232 個獨立必考題。一題可測多個子題；不為了將全部子題標成 Tested 扭曲 adaptive diagnostic，未測部分維持 Untested。
 
 ## 訓練流程
 
 **Diagnostic → Weakness Map → Targeted Study → Mock Interview → Review**
 
 1. **Diagnostic**：30 題 adaptive interview，一次只問一題，先回答再評分；每題依回答逐次追問 1–3 層。
-2. **Weakness Map**：每完成 10 題，用原始回答與追問證據更新子題等級；未測的部分繼續保留 Untested。
+2. **Weakness Map**：依每題的原始回答與追問，只更新確實測到的子題；每完成 10 題保存 checkpoint snapshot，未測部分維持 Untested。
 3. **Targeted Study**：優先補已證實的 Critical / Weak，再補影響後續推導的基礎。答錯時依「核心錯誤 → 直覺 → 正式定義 → 例子 → 必要數學」修正。
 4. **Mock Interview**：混合 fundamentals 與研究 / 專案答辯，逐題記錄回答、追問及改善事項。
 5. **Review**：閉卷重答、變形題與 spaced repetition；用新的實測證據更新狀態，再進入下一輪。
@@ -88,4 +92,4 @@ Session 是作答證據的原始來源，Weakness Map 是目前能力狀態的�
 - **研究答辯**：分清 Problem、My contribution、證據與 Limitations；成果數字必須有實際紀錄來源。
 - **追問**：能回答「為什麼、條件改變、成本與替代方案」。只背名稱、公式或模糊地差不多對，不能評 A。
 
-現在先檢視本次 repository expansion。未取得恢復訓練的確認前，不開始 Diagnostic Question 1。
+從 [目前 session](diagnostic/sessions/2026-10-06-session-01.md) 恢復第 1 題：先保留閉卷首答，再逐層追問；assisted answer 不覆蓋 baseline。
