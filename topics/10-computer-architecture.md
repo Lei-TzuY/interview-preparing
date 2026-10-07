@@ -106,3 +106,9 @@ Tier A。因有 GPU inference / deployment 經驗，CPU/GPU architecture、memor
 
 - [MIT 6.004：Computation Structures](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/)
 - [NVIDIA：CUDA C++ Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[CPU pipeline](../visual-learning/app/lessons/cpu-pipeline.html) · [Cache locality](../visual-learning/app/lessons/cache-locality.html) · [GPU memory diagram](../visual-learning/app/lessons/gpu-memory.html) · [Bottleneck scenarios](../visual-learning/app/lessons/hardware-bottleneck.html)。外部補充（同樣限首答後）：[MIT 6.004：pipeline／cache 教材](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

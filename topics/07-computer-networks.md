@@ -77,3 +77,9 @@ Tier A。能沿著一次網路請求說明 naming、routing、transport、securi
 
 - [RFC 9293：TCP](https://www.rfc-editor.org/rfc/rfc9293.html)
 - [RFC 8446：TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[TCP delivery](../visual-learning/app/lessons/tcp-delivery.html) · [Network / DNS / TLS diagram](../visual-learning/app/lessons/network-stack.html)。外部補充（同樣限首答後）：[TCP RFC 9293：握手與狀態圖](https://www.rfc-editor.org/rfc/rfc9293)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

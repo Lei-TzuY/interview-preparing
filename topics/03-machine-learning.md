@@ -85,3 +85,9 @@ Tier S。能說明問題設定、模型假設、loss、optimization、泛化與�
 ## References
 
 - [Stanford CS229：Machine Learning](https://cs229.stanford.edu/)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Regression](../visual-learning/app/lessons/regression.html) · [Overfitting](../visual-learning/app/lessons/overfitting.html) · [Confusion matrix](../visual-learning/app/lessons/confusion-matrix.html) · [Data / validation scenarios](../visual-learning/app/lessons/data-validation.html)。外部補充（同樣限首答後）：[MLU Explain decision trees](https://mlu-explain.github.io/decision-tree/)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

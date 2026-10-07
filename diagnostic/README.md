@@ -59,3 +59,9 @@ Syllabus 已 freeze；只有實測暴露目前 coverage 沒有涵蓋的重要基
 ## Records
 
 使用 [sessions 說明](sessions/README.md) 與 [session template](sessions/session-template.md)。評分必須有作答證據；尚未開始的 session 不建立假完成紀錄。
+
+## Visual Learning firewall
+
+首答前禁止開啟對應 [visual lesson](../visual-learning/README.md)、標準公式推導、完整解法或 answer-oriented external explanation，不自動推薦解題資源。保存首次原始回答後，只有該 concept 被判 Review / Weak / Critical 或教練指定需 intuition，才使用；跨子題教材應先確認不洩漏後續未測 baseline。
+
+看過教材後立即答對只算 Assisted Improvement，另記於原 session；不覆蓋 cold baseline、不改原 grade、不自動升 Strong / Mastered。依既有 [review](../review/spaced-repetition.md) 延後 closed-book retest，才新增 independent evidence。App 不代寫 session / weakness / mistake / progress。

@@ -76,3 +76,9 @@ Tier A。能用 process、concurrency 與 virtual memory 解釋程式實際執�
 ## References
 
 - [Operating Systems: Three Easy Pieces（作者網站）](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Process / thread](../visual-learning/app/lessons/process-thread.html) · [Virtual memory](../visual-learning/app/lessons/virtual-memory.html) · [Deadlock](../visual-learning/app/lessons/deadlock.html) · [Concurrency scenarios](../visual-learning/app/lessons/concurrency-contract.html)。外部補充（同樣限首答後）：[OSTEP 圖解與章節](https://pages.cs.wisc.edu/~remzi/OSTEP/)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

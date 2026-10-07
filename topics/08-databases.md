@@ -76,3 +76,9 @@ Tier A。能以 query、index、transaction 與 schema 設計解釋資料正確�
 
 - [PostgreSQL：Indexes](https://www.postgresql.org/docs/current/indexes.html)
 - [PostgreSQL：Transaction Isolation](https://www.postgresql.org/docs/current/transaction-iso.html)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Transaction schedules](../visual-learning/app/lessons/transaction-schedule.html) · [Normalization diagram](../visual-learning/app/lessons/database-dependencies.html)。外部補充（同樣限首答後）：[USF B+ tree visualization](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

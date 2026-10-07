@@ -78,3 +78,9 @@ Tier A。以 C++ 常見口試語意為主，能說明 lifetime、ownership、資
 ## References
 
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Lifetime / ownership scenarios](../visual-learning/app/lessons/cpp-lifetime.html)。外部補充（同樣限首答後）：[C++ Core Guidelines：ownership／RAII 對照](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

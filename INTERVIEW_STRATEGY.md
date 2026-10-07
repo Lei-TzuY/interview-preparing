@@ -63,3 +63,9 @@
 - 評級依 [A–D rubric](diagnostic/scoring-rubric.md)，不因經驗豐富或表達流利放寬 correctness。
 - 模糊地「差不多對」不能算完全掌握；看過答案、用過框架也不等於會推導。
 - 每個改善事項必須有下一次驗證；時間不足就保留未完成與未知的狀態。
+
+## Visual Learning to oral explanation
+
+先保存 closed-book 原始首答；首答前禁止對應 lesson、標準公式推導、完整解法或答案導向外部資源，也不自動推薦目前題目的教材。只有 Review / Weak / Critical 或教練指定需 intuition，才用 [Visual Learning](visual-learning/README.md)。
+
+操作 tiny example 時能逐步說 state、shape、intermediate value、假設與 edge case；接著遮住教材講 30 秒，再接受 1–3 層教授追問。這次立即回答只算 Assisted Improvement，另記而不覆蓋 cold baseline、不改原 Diagnostic grade、不自動升 Strong / Mastered。延後 closed-book retest 才能形成 independent mastery evidence。

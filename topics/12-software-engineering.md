@@ -110,3 +110,9 @@
 - [Stryker：Mutant States and Metrics](https://stryker-mutator.io/docs/mutation-testing-elements/mutant-states-and-metrics/)
 - [pytest：Flaky Tests](https://docs.pytest.org/en/stable/explanation/flaky.html)
 - [Git：git revert](https://git-scm.com/docs/git-revert)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Contracts / design](../visual-learning/app/lessons/contracts-design.html) · [QA evidence](../visual-learning/app/lessons/qa-evidence.html) · [Delivery / debugging](../visual-learning/app/lessons/delivery-debugging.html) · [Testing diagram](../visual-learning/app/lessons/testing-evidence.html)。外部補充（同樣限首答後）：[Stryker mutant states](https://stryker-mutator.io/docs/mutation-testing-elements/mutant-states-and-metrics/)／[Google review practice](https://google.github.io/eng-practices/review/)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

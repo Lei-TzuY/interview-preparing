@@ -1,0 +1,10 @@
+{
+  "name": "interview-visual-learning",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/numeric.test.mjs tests/quality.test.mjs",
+    "build:index": "node scripts/build-index.mjs",
+    "test:browser": "node tests/browser.mjs"
+  }
+}

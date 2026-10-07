@@ -99,3 +99,9 @@ $$
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
 - [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Scaled attention](../visual-learning/app/lessons/scaled-dot-product-attention.html) · [Multi-head attention](../visual-learning/app/lessons/multi-head-attention.html) · [KV cache](../visual-learning/app/lessons/kv-cache.html) · [Pre-LN decoder](../visual-learning/app/lessons/decoder-block.html)。外部補充（同樣限首答後）：[Transformer Explainer](https://poloclub.github.io/transformer-explainer/)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

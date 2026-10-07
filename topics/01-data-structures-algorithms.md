@@ -84,3 +84,9 @@ Tier S。能從問題限制選資料結構與演算法，口述推理、證明�
 ## References
 
 - [MIT 6.006：Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Binary search invariant](../visual-learning/app/lessons/binary-search.html) · [BFS / DFS](../visual-learning/app/lessons/bfs-dfs.html) · [Heap](../visual-learning/app/lessons/heap-operations.html) · [Tiny DP](../visual-learning/app/lessons/dynamic-programming.html)。外部補充（同樣限首答後）：[VisuAlgo sorting](https://visualgo.net/en/sorting)／[union-find](https://visualgo.net/en/ufds)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

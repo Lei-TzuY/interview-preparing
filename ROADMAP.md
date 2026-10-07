@@ -54,3 +54,9 @@ Mock 建議先做 20–30 分鐘，再按目標面試形式調整。Mock 次數�
 - [ ] 研究與專案能清楚交代個人貢獻、比較、結果來源及限制。
 - [ ] 已進行模擬口試，改善事項有後續驗證。
 - [ ] 仍未掌握與 Untested 的項目如實保留，不以看完文件宣告完成。
+
+## Visual Learning integration
+
+四週架構與轉階段條件維持不變。[Visual Learning](visual-learning/README.md) 是 Targeted Study / Review 內的工具，沒有新 phase 或每日 lesson 配額。先保存 Diagnostic closed-book 首答，再依 Review / Weak / Critical evidence 或教練指定，從 [Resource Map](visual-learning/RESOURCE_MAP.md) 選一個最貼近核心錯誤的資源。
+
+首答前禁止對應 lesson、公式 / 完整解法與答案導向外部講解；不自動推薦目前題目的資源。觀看後 self explanation 與即時重答只算 Assisted Improvement，cold baseline、原 grade 與能力等級不由教材更新。沿既有 spaced repetition 安排 delayed closed-book retest，再用獨立證據調整 roadmap。

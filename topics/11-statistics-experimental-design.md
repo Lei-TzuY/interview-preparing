@@ -113,3 +113,9 @@ Paired comparison 先定義 $d_i=a_i-b_i$，再分析 differences 的 mean / unc
 - [ASA：Statement on Statistical Significance and P-Values](https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf)
 - [NIST：Confidence Limits for the Mean](https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm)
 - [NIST：Choosing an Experimental Design](https://www.itl.nist.gov/div898/handbook/pri/section3/pri3.htm)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Sampling / measurement](../visual-learning/app/lessons/measurement-unit.html) · [Statistical claims](../visual-learning/app/lessons/statistical-claims.html) · [Experiment controls](../visual-learning/app/lessons/experiment-controls.html)。外部補充（同樣限首答後）：[Seeing Theory：抽樣／信賴區間互動](https://seeing-theory.brown.edu/frequentist-inference/index.html)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

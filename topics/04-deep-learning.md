@@ -81,3 +81,9 @@ Tier S。能從 computation graph 解釋 forward、loss、backward 與更新，�
 ## References
 
 - [PyTorch CrossEntropyLoss：logits 與 target 介面](https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Tiny network / backprop](../visual-learning/app/lessons/tiny-network.html) · [Softmax / cross entropy](../visual-learning/app/lessons/softmax-cross-entropy.html) · [Convolution](../visual-learning/app/lessons/convolution.html) · [BN / LN axes](../visual-learning/app/lessons/normalization.html)。外部補充（同樣限首答後）：[TensorFlow Playground](https://playground.tensorflow.org/)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。

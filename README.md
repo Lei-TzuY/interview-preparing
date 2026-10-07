@@ -54,6 +54,7 @@ Technical coverage 現為 12 個 topics，加 Research / Project Defense 共 13 
 | [mock-interviews/](mock-interviews/README.md) | 模擬口試流程及逐題紀錄模板 |
 | [mistakes/](mistakes/README.md) | 核心錯誤、正確 mental model 與重測紀錄 |
 | [review/](review/spaced-repetition.md) | 間隔複習規則與待複習 queue |
+| [visual-learning/](visual-learning/README.md) | 首答保存後使用的互動 / 視覺理解輔助層；不計為 mastery evidence |
 | [school-specific/](school-specific/README.md) | 一階通過 / 確定口試後才高強度使用的 [school template](school-specific/school-template.md) |
 
 ## Technical topic index
@@ -93,3 +94,11 @@ Session 是作答證據的原始來源，Weakness Map 是目前能力狀態的�
 - **追問**：能回答「為什麼、條件改變、成本與替代方案」。只背名稱、公式或模糊地差不多對，不能評 A。
 
 從 [目前 session](diagnostic/sessions/2026-10-06-session-01.md) 恢復第 1 題：先保留閉卷首答，再逐層追問；assisted answer 不覆蓋 baseline。
+
+## Visual Learning / Interactive Learning
+
+[Visual Learning](visual-learning/README.md) 是既有 syllabus 的理解輔助層；[Resource Map](visual-learning/RESOURCE_MAP.md) 讓 232 個 subtopics 都有資源決策，不增加 technical topics、Diagnostic 題數或 Tested coverage。可用 [本地 app](visual-learning/app/index.html) 操作 tiny examples。
+
+Diagnostic blind attempt → evidence → targeted study → visual learning if useful → tiny exercise → closed-book explanation → delayed retest。Visual Learning 屬 Targeted Study 的選用工具，並非新 phase。
+
+Closed-book 首答前禁止開啟對應 lesson、公式推導、完整解法或 answer-oriented external explanation，不自動推薦目前題目的資源。Session 保存原始首答後，只有 Review / Weak / Critical 或教練指定需建立 intuition 才使用。閱讀後立即重答只記 Assisted Improvement，不覆蓋 cold baseline、不改原 Diagnostic grade、不自動升 Strong / Mastered；仍需 delayed closed-book retest。

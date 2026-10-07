@@ -87,3 +87,9 @@ Tier S。能把 linear algebra、calculus、probability 用於 ML 的模型、lo
 ## References
 
 - [MIT 18.06：Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/)
+
+## Visual Learning
+
+**Use only after blind diagnostic attempt.** 首答已保存，且教練指定 Review / Weak / Critical 或需 intuition 時才使用；閱讀後只算 Assisted Improvement，延後閉卷重測才產生 independent evidence。
+
+[Vector / matrix](../visual-learning/app/lessons/matrix-transform.html) · [Eigenvectors](../visual-learning/app/lessons/eigenvectors.html) · [Gradient descent](../visual-learning/app/lessons/gradient-descent.html) · [Chain rule](../visual-learning/app/lessons/chain-rule.html)。外部補充（同樣限首答後）：[3Blue1Brown linear transformations](https://www.3blue1brown.com/lessons/linear-transformations/)。完整 external / local / scenario 決策見 [Visual Learning index](../visual-learning/INDEX.md) 與 [Resource Map](../visual-learning/RESOURCE_MAP.md)。
