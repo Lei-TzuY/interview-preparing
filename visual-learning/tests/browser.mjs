@@ -13,8 +13,13 @@ try {
 } catch {
   console.error('NOT RUN: Playwright package unavailable. App itself has no package dependency.');process.exit(2);
 }
-const executable=playwright.chromium.executablePath();
-if(!existsSync(executable)) {console.error('NOT RUN: Chromium binary unavailable at '+executable);process.exit(2);}
+// Use an existing Chrome / Edge installation without downloading a browser.
+const channel=process.env.BROWSER_CHANNEL?.trim(),customExecutable=process.env.BROWSER_EXECUTABLE_PATH?.trim();
+if(channel&&!['chrome','msedge'].includes(channel)) {console.error('NOT RUN: BROWSER_CHANNEL must be chrome or msedge.');process.exit(2);}
+if(channel&&customExecutable) {console.error('NOT RUN: Set either BROWSER_CHANNEL or BROWSER_EXECUTABLE_PATH, not both.');process.exit(2);}
+const executable=customExecutable||(!channel?playwright.chromium.executablePath():null);
+if(executable&&!existsSync(executable)) {console.error('NOT RUN: Browser binary unavailable at '+executable);process.exit(2);}
+const launchOptions={headless:true,...(channel?{channel}:{}),...(customExecutable?{executablePath:customExecutable}:{})};
 let server;
 const base=process.env.VISUAL_BASE_URL||'http://127.0.0.1:8765';
 const app=base+'/visual-learning/app/';
@@ -26,12 +31,14 @@ try {
     for(let i=0;i<25;i++){try{const response=await fetch(app);if(response.ok){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,100));}
     assert.ok(ready,'Python static server did not start');
   }
-  browser=await playwright.chromium.launch({headless:true});
-  const page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[],badResponses=[],externalRequests=[];
+  browser=await playwright.chromium.launch(launchOptions);
+  console.log('Browser '+browser.version()+'; '+(channel?'channel='+channel:'executable='+executable));
+  const page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[],badResponses=[],failedRequests=[],externalRequests=[],faviconRequests=[];
   page.on('pageerror',e=>errors.push(e.message));
   page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
-  page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('/favicon.ico'))badResponses.push(r.url()+' '+r.status());});
-  page.on('request',r=>{if(!r.url().startsWith(base))externalRequests.push(r.url());});
+  page.on('response',r=>{if(r.status()>=400)badResponses.push(r.url()+' '+r.status());});
+  page.on('requestfailed',r=>failedRequests.push(r.url()+' '+r.failure()?.errorText));
+  page.on('request',r=>{if(!r.url().startsWith(base))externalRequests.push(r.url());if(new URL(r.url()).pathname==='/favicon.ico')faviconRequests.push(r.url());});
   // Synthetic developer acknowledgement only; no real learner attempt is asserted or recorded.
   const unlock=async()=>{await page.locator('#baseline-saved').check();await page.locator('#coach-selected').check();await page.getByRole('button',{name:'確認後開啟',exact:true}).click();};
   await page.goto(app);
@@ -99,6 +106,9 @@ try {
   assert.equal(await page.getByRole('button',{name:'Play',exact:true}).isEnabled(),false);await page.getByRole('button',{name:'Next',exact:true}).click();assert.match(await page.locator('.step-status').innerText(),/Step 2/);
   await page.setViewportSize({width:390,height:844});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true,'mobile overflow');
   await page.reload();assert.equal(await page.locator('.lesson-section').count(),0,'reload must relock');
-  assert.deepEqual(errors,[]);assert.deepEqual(badResponses,[]);assert.deepEqual(externalRequests,[]);
+  assert.deepEqual(errors,[]);assert.deepEqual(badResponses,[]);assert.deepEqual(failedRequests,[]);assert.deepEqual(externalRequests,[]);assert.deepEqual(faviconRequests,[],'empty inline favicon must suppress the implicit request');
   console.log('PASS real Chromium: homepage, filters, external confirmation, '+interactiveCount+' interactive / '+otherCount+' other pages, all states, keyboard, reduced-motion, mobile, no console / network failures or persistence.');
+} catch(error) {
+  if(browser)throw error;
+  console.error('NOT RUN: Browser validation could not start: '+error.message);process.exitCode=2;
 } finally {if(browser)await browser.close();if(server)server.kill();}

@@ -82,9 +82,11 @@ test('Local HTML references, gated wrappers, module imports and SVG assets resol
     const content=await readFile(file,'utf8');
     if(file.endsWith('.html')) {
       assert.match(content,/<html lang="zh-Hant">/);assert.match(content,/href="#main"/);assert.match(content,/<script type="module"/);
+      // Suppress Chrome's implicit /favicon.ico request without adding assets.
+      assert.match(content,/<link rel="icon" href="data:,">/);
       assert.doesNotMatch(content,/<(?:iframe|audio|video)\b/i);
       assert.doesNotMatch(content,/\b(?:src|href)="https?:\/\//i);
-      for(const [,url] of content.matchAll(/\b(?:src|href)="([^"]+)"/g))if(!url.startsWith('#'))assert.ok(await exists(path.resolve(path.dirname(file),url)),file+' missing '+url);
+      for(const [,url] of content.matchAll(/\b(?:src|href)="([^"]+)"/g))if(!url.startsWith('#')&&url!=='data:,')assert.ok(await exists(path.resolve(path.dirname(file),url)),file+' missing '+url);
       if(file.includes('/lessons/')){assert.match(content,/data-resource-id="[a-z0-9-]+"/);assert.doesNotMatch(content,/QK|softmax\(|∂|<table/);}
     }
     if(file.endsWith('.js')) {
